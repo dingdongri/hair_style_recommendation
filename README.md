@@ -1,10 +1,10 @@
-# 얼굴형 분석 및 남성 헤어스타일 추천 웹 애플리케이션
+# 얼굴형 분석 및 남성 헤어스타일 추천 웹 애플리케이션 💇‍♂️
 
 이 프로젝트는 사용자가 업로드한 얼굴 사진을 분석하여 얼굴형을 분류하고, 해당 얼굴형에 적합한 남성 헤어스타일을 추천하는 웹 애플리케이션입니다. TensorFlow와 Flask를 활용하여 딥러닝 모델을 학습시키고, 이를 웹 서비스로 제공합니다.
 
 ---
 
-## 주요 기능
+## 주요 기능 ✨
 
 1. **얼굴형 분류 모델 학습**:
    - EfficientNetB0을 사용한 얼굴형 분류 모델을 학습합니다.
@@ -20,7 +20,7 @@
 
 ---
 
-## 파일 구조
+## 파일 구조 📁
 
 ```
 project/
@@ -36,9 +36,10 @@ project/
 └── efficientnet_face_shape_model_updated.keras  # 학습된 모델 파일
 ```
 
+
 ---
 
-## 설치 및 실행 방법
+## 설치 및 실행 방법 🚀
 
 ### 1. 요구 사항
 
@@ -55,7 +56,7 @@ project/
 pip install tensorflow flask opencv-python-headless numpy scikit-learn
 ```
 
-### 2. 데이터셋 준비
+### 2. 데이터셋 준비 📊
 
 - Kaggle 등에서 제공되는 얼굴형 분류 데이터셋을 준비합니다.
 - 데이터셋의 구조는 다음과 같아야 합니다:
@@ -70,7 +71,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
 
 - 데이터셋 경로를 `image_processing.py`와 `model_training.py`에 설정합니다.
 
-### 3. 모델 학습
+### 3. 모델 학습 🧠
 
 1. `model_training.py`를 실행하여 모델을 학습시킵니다:
    ```bash
@@ -78,7 +79,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
    ```
 2. 학습된 모델이 `efficientnet_face_shape_model_updated.keras`로 저장됩니다.
 
-### 4. 서버 실행
+### 4. 서버 실행 🌐
 
 1. `app.py`를 실행하여 Flask 서버를 시작합니다:
    ```bash
@@ -86,14 +87,14 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
    ```
 2. 브라우저에서 `http://127.0.0.1:5000/`로 이동합니다.
 
-### 5. 얼굴형 분석 및 추천
+### 5. 얼굴형 분석 및 추천 📸
 
 1. 메인 페이지에서 얼굴 사진을 업로드합니다.
 2. 결과 페이지에서 예측된 얼굴형과 추천 헤어스타일을 확인합니다.
 
 ---
 
-## 코드 설명
+## 코드 설명 💻
 
 ### 1. `image_processing.py`
 - 얼굴 사진을 로드하고, 크기를 조정하며 정규화합니다.
@@ -117,7 +118,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
 
 ---
 
-## 참고
+## 참고 📚
 
 - 얼굴 검출에는 OpenCV의 Haar Cascade를 사용합니다.
 - 모델 학습에는 전이 학습(Transfer Learning) 기법이 사용되었습니다.
@@ -125,7 +126,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
 
 ---
 
-## 프로젝트 한계 및 개선 사항
+## 프로젝트 한계 및 개선 사항 🛠️
 
 1. **한정된 헤어스타일 추천**:
    - 현재는 남성 헤어스타일만 추천하고 있습니다.
@@ -140,7 +141,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
 
 ---
 
-## 개발 환경
+## 개발 환경 🛠️
 
 - Python 3.8
 - Visual Studio Code
@@ -148,7 +149,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
 
 ---
 
-## 기여 방법
+## 기여 방법 🤝
 
 이 프로젝트에 기여하려면:
 
@@ -160,7 +161,7 @@ pip install tensorflow flask opencv-python-headless numpy scikit-learn
 
 ---
 
-## 라이선스
+## 라이선스 📄
 
 이 프로젝트는 MIT 라이선스에 따라 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요.
 
