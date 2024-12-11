@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>얼굴형 분석 및 헤어스타일 추천</title>
+</head>
+<body>
+    <h1>얼굴형 분석 및 헤어스타일 추천</h1>
+    <p>얼굴 사진을 업로드하여 얼굴형을 분석하고, 그에 맞는 헤어스타일을 추천받아보세요!</p>
+    
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">사진 업로드:</label>
+        <input type="file" name="file" id="file" accept="image/*">
+        <button type="submit">업로드</button>
+    </form>
+    
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
